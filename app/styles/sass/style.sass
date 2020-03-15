@@ -1,0 +1,500 @@
+*, :after, :before
+    -webkit-box-sizing: border-box
+    box-sizing: border-box
+
+body
+    color: #ffffff
+    background: #ffffff
+
+    .container
+        margin: 0 auto
+        max-width: 1200px
+
+
+    .title
+        font-size: 30px
+        font-weight: 700
+        text-align: center
+        font-family: 'Montserrat'
+        text-transform: uppercase
+
+    .subtitle
+        font-size: 24px
+        text-align: center
+        text-transform: capatalize
+        font-family: 'Kaushan Script', cursive
+
+        margin-bottom: 25px
+
+    .description
+        width: 960px
+        color: #b6b6b6
+        font-size: 15px
+        font-family: 'Roboto', sans-serif
+
+    .redSeperator
+        text-align: center
+        width: 60px
+        height: 3px
+        background: #f38181
+        border: 0
+        margin-top: 25px
+        margin-bottom: 45px
+
+    .header
+        display: flex
+        flex-direction: column
+        text-align: center
+
+        height: 100vh
+        background-image: url('/images/header-background/header-shadow.jpg')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+
+        .header__top
+            width: 100%
+            display: flex
+            margin-top: 35px
+            align-items: center
+            justify-content: space-between
+            font-family: 'Montserrat'
+
+            .header__logo
+                font-size: 30px
+                font-family: 'Montserrat'
+                font-weight: 700
+
+            a
+                text-decoration: none
+                color: #ffffff
+
+            .header__navigation
+                display: flex
+                text-transform: uppercase
+                font-size: 14px
+
+                .header__item
+                    list-style: none
+                    font-weight: 700
+                    margin-right: 50px
+                    a
+                        transition: all .3s
+                        &:hover
+                            border-bottom: 3px solid #fce38a
+                            color: #fce38a
+
+        .header__content
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            .header__subtitle
+                font-size: 72px
+                text-transform: capitalize
+                margin: 170px 0px 60px 0px
+
+            .header__title
+                font-size: 150px
+                font-weight: 700
+
+            hr
+                width: 60px
+                height: 3px
+                background: #ffffff
+                border: 0
+                margin: 70px 0px 50px 0px
+
+            .header__button
+                width: 160px
+                color: #ffffff
+                background: transparent
+                border: 3px solid #ffffff
+
+                padding: 7px
+                cursor: pointer
+
+                font-size: 14px
+                font-weight: 700
+                font-family: 'Montserrat'
+                text-transform: uppercase
+
+    .block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 100px
+        color: #000000
+
+        .block__table
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+
+            .block__item
+                width: 380px
+                height: 250px
+                margin: 100px 30px 100px 0px
+                background: #95e1d3
+
+                img
+                    width: 380px
+                    height: 250px
+                    object-fit: cover
+                    transition: all .2s
+
+                    &:hover
+                        margin: -10px 0px 0px 10px
+
+    .statistics
+        display: grid
+        grid-template-columns: repeat(5, 250px)
+        justify-content: center
+
+        background: #95e1d3
+
+        .statistics__item
+            text-align: center
+            padding: 40px
+            border-left: 1px solid #b5eae0
+            border-right: 1px solid #b5eae0
+
+            .statistics__digit
+                font-size: 72px
+                font-weight: 700
+                font-family: 'Montserrat'
+
+                margin: 0px 0px 0px 0px
+
+            .statistics__about
+                font-size: 14px
+                font-weight: 400
+                font-family: 'Montserrat'
+                text-transform: uppercase
+
+    .services
+        .services__list
+            display: flex
+            flex-direction: column
+
+            hr
+                border: 0
+                height: 1px
+                width: 100%
+                background: #e3e3e3
+
+            .services__row
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+
+                .services__item
+                    display: flex
+                    flex-direction: row
+                    margin: 30px 25px
+
+                    img
+                        height: 35px
+                        width: 55px
+                        position: relative;
+                        overflow: hidden;
+                        margin-right: 25px
+
+                    .services__text
+                        display: flex
+                        flex-direction: column
+
+                        .services__name
+                            text-transform: uppercase
+                            font-weight: 600
+                            font-family: 'Montserrat'
+
+                        .services__desc
+                            color: #888888
+                            font-weight: 300
+                            font-family: 'Montserrat'
+
+    .features
+        display: flex
+        flex-direction: column
+        background-image: url('/images/features/background.jpg')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        .devices
+            max-width: 600px
+            margin: 0 auto
+            position: relative
+
+            .devices__item
+                display: block
+
+            .devices__item--iphone
+                position: absolute
+                bottom: -80px
+                left: 375px
+                z-index: 1
+
+    .options
+        .content
+            display: flex
+            flex-direction: row
+
+            .content__img
+                width: 500px
+                margin-right: 30px
+
+            .content__accordion
+                .ac
+                    margin-top: 0px
+
+                    .ac-q
+                        text-transform: uppercase
+                        color: #333333
+
+                        font-size: 15px
+                        font-weight: 600
+                        font-family: 'Montserrat'
+
+                    .ac-a p
+                        font-size: 15px
+                        color: #c3c3c3
+                        font-weight: 300
+                        font-family: 'Roboto', italic
+
+    .team
+        display: flex
+        flex-direction: column
+
+        .team__list
+            display: flex
+            flex-direction: row
+
+            margin-top: 90px
+
+            .person
+                display: flex
+                flex-direction: column
+
+                align-items: center
+                justify-content: center
+
+                margin-right: 30px
+
+                width: 360px
+                height: 480px
+
+                .person__avatar
+                    width: 360px
+                    height: 480px
+                    object-fit: cover
+                    background: #ff8000
+
+                .person__name
+                    font-size: 14px
+                    font-weight: 600
+                    font-family: 'Montserrat'
+                    text-transform: uppercase
+
+                .person__role
+                    margin-top: -5px
+                    color: #cacaca
+                    font-size: 14px
+                    font-weight: 400
+                    font-family: 'Roboto'
+                    text-transform: capitalize
+
+    .tape
+        background: #f8f8f8
+
+    .resume
+        display: flex
+        flex-direction: column
+
+        .resume__list
+            display: grid
+            grid-template-columns: repeat(4, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+
+            margin-top: 100px
+
+            .resume__item
+                height: 390px
+                width: 480px
+
+    .swiper-container
+        width: 100%
+
+        .swiper-button-prev, .swiper-button-next
+            color: #d0d0d0
+
+        .swiper-wrapper
+            .swiper-slide
+                display: flex
+                flex-direction: row
+
+                .swiper__icon
+                    height: 175px
+                    width: 175px
+                    border-radius: 100%
+                    margin: 0px 25px 0px 100px
+
+                .swiper__text
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    margin-right: 100px
+                    position: relative
+
+                    .swiper__quote
+                        font-weight: 300
+                        font-family: 'Roboto', italic
+                        text-align: justify
+
+                    .swiper__name
+                        font-size: 24px
+                        font-weight: 400
+                        position: relative
+                        padding-left: 65px
+                        text-transform: capitalize
+                        font-family: 'Kaushan Script', cursive
+
+                        &::before
+                            content: ''
+                            position: absolute
+
+                            width: 60px
+                            height: 3px
+
+                            top: 12px
+                            left: 0
+
+                            background-color: #f38181
+
+    .clients
+        background-image: url("/images/background-clients.jpg")
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+
+        .clients__list
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            grid-gap: 80px
+            margin-bottom: 100px
+
+            .client__item
+                display: flex
+
+                .client__avatar
+                    width: 120px
+                    height: 120px
+                    border-radius: 100%
+                    object-fit: cover
+
+                    margin: 0px 20px
+
+                .client__info
+                    display: flex
+                    flex-direction: column
+
+                    font-size: 15px
+
+                    .client__name
+                        font-weight: 600
+                        font-family: 'Montserrat'
+                        text-transform: uppercase
+
+                    .client__role
+                        font-weight: 300
+                        text-transform: capitalize
+                        font-family: 'Roboto', italic
+                        margin: 10px 0
+                        &::before
+                            position: absolute
+                            content: ''
+
+                            height: 3px
+                            width: 60px
+
+                            margin: 25px 0px 0px 0px
+
+                            background-color: #f38181
+
+                    .client__feedback
+                        margin-top: 20px
+                        font-weight: 300
+                        font-family: 'Roboto', sans-serif
+
+    .articles
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        grid-column-gap: 30px
+
+        font-size: 14px
+
+        .article
+            width: 380px
+
+            .thumb
+                .thumb__preview
+                    width: 100%
+                    object-fit: cover
+
+                .thumb__date
+                    position: absolute
+
+                    color: #ffffff
+                    background: #95e1d3
+
+            .article__name
+                font-weight: 600
+                margin: 15px 0px
+                font-family: 'Montserrat'
+                text-transform: uppercase
+
+            .article__text-preview
+                color: #999999
+                font-weight: 400
+                font-family: 'Roboto', sans-serif
+
+            hr
+                width: 100%
+                color: #e5e5e5
+                margin: 15px 0px
+                border: 1px solid #e5e5e5
+
+            .article__statistics
+                display: flex
+                flex-direction: row
+
+                font-size: 6px
+                font-family: 'Roboto'
+
+                img
+                    height: 15px
+
+                .article__views
+                    margin-right: 15px
+
+                .article__views, .article__comments
+                    display: flex
+                    flex-direction: row
+                    align-self: center
+                    color: #999999
+
+    .map
+        text-align: center
+        background-image: url('/images/map/map-bk.png')
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+
+        img
+            margin: 20px
+
+
+    .footer
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
