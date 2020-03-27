@@ -51,7 +51,7 @@ body .header {
   flex-direction: column;
   text-align: center;
   height: 100vh;
-  background-image: url("/images/header-background/header-shadow.jpg");
+  background-image: url("images/header-background/header-shadow.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
